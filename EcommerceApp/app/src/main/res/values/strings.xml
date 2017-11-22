@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EcommerceApp</string>
+    <string name="sort_label">Sort</string>
+    <string name="drawer_open">Drawer is Visible</string>
+    <string name="drawer_close">Drawer is invisible</string>
+    <string name="price_text">price : </string>
+    <string name="size_text">size : </string>
+    <string name="shop_for">SHOP FOR</string>
+</resources>

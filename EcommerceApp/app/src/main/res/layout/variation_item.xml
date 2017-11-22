@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/main_view"
+    android:clickable="true"
+    android:background="@android:color/transparent"
+    android:layout_margin="@dimen/margin_1dp"
+    android:layout_marginEnd="@dimen/margin_1dp"
+    android:layout_marginStart="@dimen/margin_1dp">
+
+    <!-- Variation Color/Image -->
+    <ImageButton
+        android:id="@+id/variationImage"
+        android:layout_width="@dimen/variation_image_width_height"
+        android:layout_height="@dimen/variation_image_width_height"
+        android:clickable="true"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:cardUseCompatPadding="true"
+app:cardElevation="@dimen/card_view_elevation">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/product_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/recycler_grid_cover_height"
+            android:src="@color/light_gray"
+            android:layout_alignParentTop="true"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_image"
+            android:layout_margin="@dimen/margin_5dp"
+            android:layout_marginStart="@dimen/margin_5dp"
+            android:layout_marginEnd="@dimen/margin_5dp"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:id="@+id/product_title"
+                android:layout_width="wrap_content"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/body_small_font_size"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/product_price"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/product_title"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_text_size"
+                android:layout_gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/product_size"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/product_price"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/small_text_size"
+                android:layout_gravity="center_vertical"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/product_size"
+                android:visibility="gone"
+                android:id="@+id/product_variations"
+                android:background="@color/light_gray">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+
+
+
+
